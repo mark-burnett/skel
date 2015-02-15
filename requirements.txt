@@ -1,0 +1,6 @@
+Django
+dj-database-url
+django-extensions
+djangorestframework
+requests
+whitenoise
