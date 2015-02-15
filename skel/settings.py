@@ -2,7 +2,6 @@ import dj_database_url
 import os
 
 
-SKEL_APP_NAME = os.environ['SKEL_APP_NAME']
 SKEL_APP_MODULE = os.environ['SKEL_APP_MODULE']
 
 
