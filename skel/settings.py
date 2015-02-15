@@ -25,7 +25,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
@@ -33,7 +33,7 @@ INSTALLED_APPS = (
     'django_filters',
 
     SKEL_APP_MODULE,
-)
+]
 if 'TEST' in os.environ:
     INSTALLED_APPS.append('django_nose')
     TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
