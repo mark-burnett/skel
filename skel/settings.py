@@ -1,4 +1,5 @@
 import dj_database_url
+import importlib
 import os
 
 
@@ -97,3 +98,10 @@ REST_FRAMEWORK = {
 
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
 }
+
+
+try:
+    globals().update(importlib.import_module(
+        '%s.settings' % SKEL_APP_MODULE).__dict__)
+except ImportError:
+    pass
